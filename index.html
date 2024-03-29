@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+  </style>
+  <title>Game - Catch the bubble</title>
+</head>
+<body>
+  <div class="screen">
+    <h1>Catch the bubble!</h1>
+    <div class="screen__button">
+      <a href="#" class="button__link" id="start">Let's start!</a>
+    </div>
+  </div>
+  <div class="screen">
+    <h1>Choose game time</h1>
+    <ul class="screen__time-list" id="time-list">
+      <li>
+        <button class="screen__time-btn" data-time="10">
+          10s
+        </button>
+      </li>
+      <li>
+        <button class="screen__time-btn" data-time="15">
+          15s
+        </button>
+      </li>
+      <li>
+        <button class="screen__time-btn" data-time="20">
+          20s
+        </button>
+      </li>
+      <li>
+        <button class="screen__time-btn" data-time="30">
+          30s
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="screen">
+    <h3><span id="time">00:00</span> left</h3>
+    <div class="screen__board" id="board"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
